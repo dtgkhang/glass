@@ -130,7 +130,8 @@ export default class AppXucXac extends Component {
             tongSoBanChoi={this.state.tongSoBanChoi}
             soBanThang={this.state.soBanThang}
           />
-          <BtnChoi xuLyKetQua={this.xuLyKetQua} />
+          <BtnChoi xuLyKetQua={this.xuLyKetQua} />{" "}
+          <p style={{ fontSize: 10 }}>dtgk</p>
         </div>
       </div>
     );

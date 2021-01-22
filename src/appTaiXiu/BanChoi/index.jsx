@@ -22,19 +22,11 @@ export default class BanChoi extends Component {
   render() {
     return (
       <div>
-        <div className="row text-center">
-          <div className="col-4">
-            <button //arrow function để hàm k chạy luôn khi render
-              onClick={() => this.xuLySuKien(true)}
-              className="bg-danger display-4 p-3 text-light"
-            >
-              TÀI{" "}
-            </button>
-          </div>
-          <div className="col-4">
-            <div className="d-flex justify-content-center">
-              {this.rederKetQuaXucXac()}
-              {/* <img
+        {" "}
+        <div className="col">
+          <div className="d-flex justify-content-center">
+            {this.rederKetQuaXucXac()}
+            {/* <img
                 src="./img/gameXucXac/1.png"
                 width={50}
                 height={50}
@@ -52,9 +44,19 @@ export default class BanChoi extends Component {
                 height={50}
                 alt="hinh"
               /> */}
-            </div>
           </div>
-          <div className="col-4">
+        </div>
+        <div className="row text-center">
+          <div className="col-6">
+            <button //arrow function để hàm k chạy luôn khi render
+              onClick={() => this.xuLySuKien(true)}
+              className="bg-danger display-4 p-3 text-light"
+            >
+              TÀI{" "}
+            </button>
+          </div>
+
+          <div className="col-6">
             <button
               onClick={() => this.xuLySuKien(false)}
               className="bg-dark display-4 p-3 text-light"
