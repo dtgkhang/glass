@@ -10,6 +10,7 @@ import ListAndKeys from "./list-and-keys";
 import Props from "./props";
 import Glasses from "./glasses";
 import GlassesAdvanced from "./glasses-advanced";
+import AppXucXac from "./appTaiXiu";
 function App() {
   return (
     <div className="App">
@@ -27,7 +28,8 @@ function App() {
       {/* <ListAndKeys /> */}
       {/* <Props /> */}
       {/* <Glasses /> */}
-      <GlassesAdvanced />
+      {/* <GlassesAdvanced /> */}
+      <AppXucXac />
     </div>
   );
 }
