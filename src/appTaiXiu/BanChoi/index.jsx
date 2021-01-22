@@ -26,7 +26,7 @@ export default class BanChoi extends Component {
           <div className="col-4">
             <button //arrow function để hàm k chạy luôn khi render
               onClick={() => this.xuLySuKien(true)}
-              className="bg-danger display-4 p-5 text-light"
+              className="bg-danger display-4 p-3 text-light"
             >
               TÀI{" "}
             </button>
@@ -57,7 +57,7 @@ export default class BanChoi extends Component {
           <div className="col-4">
             <button
               onClick={() => this.xuLySuKien(false)}
-              className="bg-dark display-4 p-5 text-light"
+              className="bg-dark display-4 p-3 text-light"
             >
               XỈU{" "}
             </button>

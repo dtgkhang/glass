@@ -1,9 +1,16 @@
 /* //định nghĩa ra 1 font chữ */
+
 @font-face {
   font-family: fontXucXac;
   src: url(./Pony.ttf);
 }
+
 /* //dùng font */
+
 .gameXucXac {
   font-family: fontXucXac;
 }
+
+/* .bg-danger .display-4 .p-5 .text-light {
+  font-size: 10px!important;
+} */

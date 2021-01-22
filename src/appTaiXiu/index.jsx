@@ -118,7 +118,8 @@ export default class AppXucXac extends Component {
           }}
         >
           <div className="container">
-            <h3 className="display-4 text-center">BÀI TẬP GAME XÚC XẮC</h3>
+            <h3 className="display-4 text-center">Xúc Xắc</h3>
+            <h5>"Còn chơi là còn gỡ"</h5>
             <BanChoi
               xuLyBanChon={this.xuLyBanChon}
               ketQuaXucXac={this.state.ketQuaXucXac}

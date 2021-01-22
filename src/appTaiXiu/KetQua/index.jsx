@@ -7,7 +7,7 @@ export default class KetQua extends Component {
     return (
       // <></>
       //<React.Fragment/>
-      <div className="container text-center display-4">
+      <div className="container text-center display-5">
         <div>
           bạn chọn :{" "}
           <span className="text-danger">{banChon ? "Tài" : "Xỉu"}</span>
