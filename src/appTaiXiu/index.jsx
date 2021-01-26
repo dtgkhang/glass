@@ -97,6 +97,28 @@ export default class AppXucXac extends Component {
       tongSoBanChoi,
     });
   };
+  //choi game
+  choiGame = () => {
+    //sau 100ms chạy lại
+    let i = 1;
+    //làm xúc xắc quay
+    const couter = setInterval(() => {
+      const newKetQuaXucXac = [
+        this.xucXacMau[getRandomInt(6)],
+        this.xucXacMau[getRandomInt(6)],
+        this.xucXacMau[getRandomInt(6)],
+      ];
+      this.setState({
+        ketQuaXucXac: newKetQuaXucXac,
+      });
+      i += 1;
+      if (i > 10) {
+        clearInterval(couter);
+        //tính kq
+        this.xuLyKetQua();
+      }
+    }, 100);
+  };
   xuLyBanChon = (banChon) => {
     this.setState({
       //   banChon : banChon,
@@ -119,7 +141,7 @@ export default class AppXucXac extends Component {
         >
           <div className="container">
             <h3 className="display-4 text-center">Xúc Xắc</h3>
-            <h5>"Còn chơi là còn gỡ"</h5>
+            {/* <h5>"Còn chơi là còn gỡ"</h5> */}
             <BanChoi
               xuLyBanChon={this.xuLyBanChon}
               ketQuaXucXac={this.state.ketQuaXucXac}
@@ -130,8 +152,8 @@ export default class AppXucXac extends Component {
             tongSoBanChoi={this.state.tongSoBanChoi}
             soBanThang={this.state.soBanThang}
           />
-          <BtnChoi xuLyKetQua={this.xuLyKetQua} />{" "}
-          <p style={{ fontSize: 10 }}>dtgk</p>
+          <BtnChoi xuLyKetQua={this.xuLyKetQua} choiGame={this.choiGame} />{" "}
+          {/* <p style={{ fontSize: 10 }}>dtgk</p> */}
         </div>
       </div>
     );
